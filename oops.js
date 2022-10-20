@@ -69,23 +69,23 @@
     
 // }
 
-// console.log(document.domain);
-// console.log(document.URL);
-// console.log(document.title);
+console.log(document.domain);
+console.log(document.URL);
+console.log(document.title);
 
 // document.title = 123;
-// console.log(document.doctype);
-// console.log(document.head);
-// console.log(document.body);
-// console.log(document.all[20].textContent);
+console.log(document.doctype);
+console.log(document.head);
+console.log(document.body);
+console.log(document.all[20].textContent);
 // document.all[20].textContent = "Hello";
-// console.log(document.all[20].textContent);
-// console.log(document.forms);
-// console.log(document.links);
-// console.log(document.images);
+console.log(document.all[20].innerText);
+console.log(document.forms);
+console.log(document.links);
+console.log(document.images);
 var headerTitle = document.getElementById('main-header');
 // headerTitle.textContent = 'Demo Title';
-// console.log(headerTitle.textContent);
+console.log(headerTitle.textContent);
 
 headerTitle.style.border = 'solid 2px #000';
 
