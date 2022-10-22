@@ -93,3 +93,20 @@ var title = document.all[14];
 console.log(title.textContent);
 title.style.color = 'green';
 title.style.fontWeight = 'bold';
+
+title.style.fontWeight = 'bold';
+
+var items = document.getElementsByClassName('list-group-item');
+console.log(items[1]);
+items[1].textContent = 'Hello 2';
+items[1].style.fontWeight = 'bold';
+items[1].style.backgroundColor = 'yellow';
+
+for (var i=0; i<items.length;i++){
+    items[i].style.backgroundColor = 'lightgray';
+}
+
+items[2].style.backgroundColor = 'green';
+for (var i=0; i<items.length;i++){
+    items[i].style.color = 'bold';
+}
