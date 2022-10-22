@@ -69,41 +69,63 @@
     
 // }
 
-console.log(document.domain);
-console.log(document.URL);
-console.log(document.title);
-// document.title = 123;
-console.log(document.doctype);
-console.log(document.head);
-console.log(document.body);
-console.log(document.all[20].textContent);
-//document.all[20].textContent = "Hello";
-console.log(document.all[20].textContent);
-console.log(document.forms);
-console.log(document.links);
-console.log(document.images);
-var headerTitle = document.getElementById('main-header');
-// headerTitle.textContent = 'Demo Title';
-console.log(headerTitle.textContent);
+// console.log(document.domain);
+// console.log(document.URL);
+// console.log(document.title);
+// // document.title = 123;
+// console.log(document.doctype);
+// console.log(document.head);
+// console.log(document.body);
+// console.log(document.all[20].textContent);
+// //document.all[20].textContent = "Hello";
+// console.log(document.all[20].textContent);
+// console.log(document.forms);
+// console.log(document.links);
+// console.log(document.images);
+// var headerTitle = document.getElementById('main-header');
+// // headerTitle.textContent = 'Demo Title';
+// console.log(headerTitle.textContent);
 
-headerTitle.style.border = 'solid 2px #000';
+// headerTitle.style.border = 'solid 2px #000';
 
-var title = document.all[14];
-console.log(title.textContent);
-title.style.color = 'green';
-title.style.fontWeight = 'bold';
+// var title = document.all[14];
+// console.log(title.textContent);
+// title.style.color = 'green';
+// title.style.fontWeight = 'bold';
 
-var items = document.getElementsByClassName('list-group-item');
-console.log(items[1]);
-items[1].textContent = 'Hello 2';
-items[1].style.fontWeight = 'bold';
-items[1].style.backgroundColor = 'yellow';
+// var items = document.getElementsByClassName('list-group-item');
+// console.log(items[1]);
+// items[1].textContent = 'Hello 2';
+// items[1].style.fontWeight = 'bold';
+// items[1].style.backgroundColor = 'yellow';
 
-for (var i=0; i<items.length;i++){
-    items[i].style.backgroundColor = 'lightgray';
+// for (var i=0; i<items.length;i++){
+//     items[i].style.backgroundColor = 'lightgray';
+// }
+
+// items[2].style.backgroundColor = 'green';
+// for (var i=0; i<items.length;i++){
+//     items[i].style.color = 'bold';
+// }
+
+var li = document.getElementsByTagName('li');
+console.log(li[1]);
+li[1].textContent = 'Hello 2';
+li[1].style.fontWeight = 'bold';
+li[1].style.backgroundColor = 'yellow';
+
+for (var i=0; i<li.length;i++){
+    li[i].style.backgroundColor = 'lightgray';
 }
 
-items[2].style.backgroundColor = 'green';
-for (var i=0; i<items.length;i++){
-    items[i].style.color = 'bold';
+li[2].style.backgroundColor = 'green';
+for (var i=0; i<li.length;i++){
+    li[i].style.color = 'bold';
 }
+
+var classItem = document.getElementsByClassName('single-item');
+classItem[0].style.backgroundColor = 'yellow';
+
+var tagItem = document.getElementsByTagName('li');
+tagItem[4].style.fontWeight = 'bold';
+
