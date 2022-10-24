@@ -108,24 +108,49 @@
 //     items[i].style.color = 'bold';
 // }
 
-var li = document.getElementsByTagName('li');
-console.log(li[1]);
-li[1].textContent = 'Hello 2';
-li[1].style.fontWeight = 'bold';
-li[1].style.backgroundColor = 'yellow';
+// var li = document.getElementsByTagName('li');
+// console.log(li[1]);
+// li[1].textContent = 'Hello 2';
+// li[1].style.fontWeight = 'bold';
+// li[1].style.backgroundColor = 'yellow';
 
-for (var i=0; i<li.length;i++){
-    li[i].style.backgroundColor = 'lightgray';
-}
+// for (var i=0; i<li.length;i++){
+//     li[i].style.backgroundColor = 'lightgray';
+// }
 
-li[2].style.backgroundColor = 'green';
-for (var i=0; i<li.length;i++){
-    li[i].style.color = 'bold';
-}
+// li[2].style.backgroundColor = 'green';
+// for (var i=0; i<li.length;i++){
+//     li[i].style.color = 'bold';
+// }
 
-var classItem = document.getElementsByClassName('single-item');
-classItem[0].style.backgroundColor = 'yellow';
+// var classItem = document.getElementsByClassName('single-item');
+// classItem[0].style.backgroundColor = 'yellow';
 
-var tagItem = document.getElementsByTagName('li');
-tagItem[4].style.fontWeight = 'bold';
+// var tagItem = document.getElementsByTagName('li');
+// tagItem[4].style.fontWeight = 'bold';
+
+var header = document.querySelector('#main-header');
+header.style.borderBottom = 'solid 4px #ccc';
+
+var input = document.querySelector('input');
+input.value = 'Item 5';
+
+var submit = document.querySelector('input[type="submit"]');
+submit.value = "Done";
+
+var item = document.querySelector('.list-group-item');
+item.style.color = 'red';
+
+var lastItem = document.querySelector('.list-group-item:last-child');
+lastItem.style.color = 'green';
+
+var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+thirdItem.style.color = 'blue';
+
+var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.color = 'coral';
+
+secondItem.style.backgroundColor = 'green';
+thirdItem.style.display = 'none';
+
 
